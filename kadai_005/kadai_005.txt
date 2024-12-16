@@ -1,0 +1,27 @@
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % mkdir git_challenge 
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % cd git_challenge   
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % ls -a
+.	..
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % git init
+Initialized empty Git repository in /Users/aokikazuteru/git_challenge/git_challenge/.git/
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % ls -a   
+.	..	.git
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % echo "hello,world！" >>hello_world.txt
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % cat hello_world.txt  
+hello,world！
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % git add hello_world.txt
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % git commit -m "hello_world.txtを追加"
+[main (root-commit) 71ee8cf] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % echo "こんにちは、世界 ！" >>hello_world.txt
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % cat hello_world.txt
+hello,world！
+こんにちは、世界！
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % git add hello_world.txt 
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % git commit -m "日本語訳を追記"
+[main ab0e767] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+aokikazuteru@aokikazuterunoMacBook-Air-3 git_challenge % git log --oneline
+ab0e767 (HEAD -> main) 日本語訳を追記
+71ee8cf hello_world.txtを追加
